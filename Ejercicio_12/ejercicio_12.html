@@ -1,0 +1,29 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Color</title>
+    <style>
+        .cambiarColor {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="miElemento" class="cambiarColor" onclick="cambiarColorFondo()"></div>
+
+<script>
+    function cambiarColorFondo() {
+        var elemento = document.getElementById("miElemento");
+        elemento.style.backgroundColor = "lightgreen";
+    }
+</script>
+
+</body>
+</html>
